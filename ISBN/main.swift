@@ -87,12 +87,12 @@ func report(on isDividendOfTen: Bool,sumOfAllMultiples: Int) -> String {
     if result == true{
         return """
 The 1-3-sum is \(providedNumber).
-The ISBN number 9780921418\(digit11th)\(digit12th)\(digit13th) is a valid ISBN number.)
+The ISBN number 9780921418\(digit11th)\(digit12th)\(digit13th) is a valid ISBN number.
 """
     } else {
         return """
 The 1-3-sum is \(providedNumber).
-The ISBN number 9780921418\(digit11th)\(digit12th)\(digit13th) is NOT a valid ISBN number.)
+The ISBN number 9780921418\(digit11th)\(digit12th)\(digit13th) is NOT a valid ISBN number.
 """
     }
     
@@ -102,7 +102,7 @@ let digit11th = getInput(withPrompt: "Digit 11?", minimum: 0, maximum: 9)
 let digit12th = getInput(withPrompt: "Digit 12?", minimum: 0, maximum: 9)
 let digit13th = getInput(withPrompt: "Digit 13?", minimum: 0, maximum: 9)
 
-let output = report(on: isDividendOfTen(dividend: sumOfAllMultiples(digit11th: digit11th, digit12th: digit12th, digit13th: digit13th)), sumOfAllMultiples: sumOfAllMultiples(digit11th: digit11th, digit12th: digit12th, digit13th: digit13th) )
+let output = report(on: isDividendOfTen(dividend: sumOfAllMultiples(digit11th: digit11th, digit12th: digit12th, digit13th: digit13th)), sumOfAllMultiples: sumOfAllMultiples(digit11th: digit11th, digit12th: digit12th, digit13th: digit13th))
 
 print(output)
 
