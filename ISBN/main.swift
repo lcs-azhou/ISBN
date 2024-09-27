@@ -85,9 +85,15 @@ func report(on isDividendOfTen: Bool,sumOfAllMultiples: Int) -> String {
     let providedNumber = sumOfAllMultiples
     
     if result == true{
-        return "The ISBN number 9780921418\(digit11th)\(digit12th)\(digit13th) is a valid ISBN number.)"
+        return """
+The 1-3-sum is \(providedNumber).
+The ISBN number 9780921418\(digit11th)\(digit12th)\(digit13th) is a valid ISBN number.)
+"""
     } else {
-        return "The ISBN number 9780921418\(digit11th)\(digit12th)\(digit13th) is NOT a valid ISBN number.)"
+        return """
+The 1-3-sum is \(providedNumber).
+The ISBN number 9780921418\(digit11th)\(digit12th)\(digit13th) is NOT a valid ISBN number.)
+"""
     }
     
 }
